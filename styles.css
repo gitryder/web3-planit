@@ -1,0 +1,72 @@
+html,
+body {
+  height: 100%;
+  overflow-y: hidden;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background-color: #cbc3d3;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.list-item {
+  padding: 12px 24px;
+  background-color: #ddd5e5;
+  border: 2px solid #cab8db;
+  box-shadow: 3px 3px 10px #cdbcde;
+  border-radius: 8px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.4em;
+  line-height: 1.2em;
+  letter-spacing: -0.02em;
+  color: #a67bd1;
+}
+
+.list-input {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  letter-spacing: -0.02em;
+  color: #a67bd1;
+  background: #ddd5e5;
+  box-shadow: 0px 4px 0px #9a73c1;
+}
+
+.list-input::placeholder {
+  color: #b8adc3;
+}
+
+.list-input:focus {
+  outline: none;
+  box-shadow: 0px 7px 9px #9a73c1;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.made-w-love {
+  margin-top: 1.2em;
+  opacity: 0.5;
+  color: #926bb9;
+}
