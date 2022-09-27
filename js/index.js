@@ -7,11 +7,6 @@ if (typeof web3 !== "undefined") {
   web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
 }
 
-/*
-
-1. Preparing the required credentials & creating the contract instance
-===
-
 web3.eth.defaultAccount = "";
 
 // The ABI of the contract, after compiling it.
@@ -21,12 +16,6 @@ const contractAbi = [];
 const contractAddress = "";
 
 const contract = new web3.eth.Contract(contractAbi, contractAddress);
-*/
-
-/**
-
- 2. Populating the todos
- ===
 
 function populateTodos() {
   contract.methods
@@ -42,22 +31,10 @@ function populateTodos() {
       });
     });
 }
-*/
-
-/**
-
-3. Clearing the todos
-===
 
 function clearTodos() {
   todoList.innerHTML = "";
 }
-*/
-
-/**
- 
- 4. Getting the submitted todo and adding it to the blockchain
- ===
 
 function handleTodoFormSubmit(event) {
   event.preventDefault();
@@ -75,14 +52,7 @@ function handleTodoFormSubmit(event) {
       populateTodos();
     });
 }
-*/
 
-// populateTodos();
-
-/**
-
-5. Listening to the submit event emitted by the form
-===
+populateTodos();
 
 todoForm.addEventListener("submit", handleTodoFormSubmit);
-*/
